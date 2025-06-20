@@ -288,3 +288,65 @@ body {
     width: 100px;
     align-self: center;
 }
+/*----------------------get to know me---------------------*/
+#me-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000203ef;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    border: rgb(46, 45, 45) 3px solid;
+}
+#me-wrapper header {
+    text-align: center;
+    color: rgb(240, 231, 231);
+}
+#me-wrapper header h1 {
+    padding-top: 15px;
+}
+.me1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#me-wrapper img{
+    height: 250px;
+    width: auto;
+    margin: 25px;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, #85afbb, #214970) 1;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.me1 .description {
+    text-align: left;
+    padding-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 60px;
+
+    border-left: 1px solid white;
+    padding-left: 10px;
+}
+.me2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.me2 .description {
+    text-align: left;
+    padding-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 60px;
+
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+.description p {
+    font-size: 0.9em;
+}
+.description h4 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
