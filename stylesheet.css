@@ -240,3 +240,51 @@ body {
     text-align: center;
     color: white
 }
+#socials, #inquiries {
+    background-color: #121213ef;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#socials {
+    padding: 10px 0px 10px;
+    margin-bottom: 40px;
+}
+#socials li:hover {
+    text-decoration: underline;
+}
+#inquiries {
+    justify-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#inquiries form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#inquiries form fieldset {
+    border: none; 
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+#inquiries form fieldset legend {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#inquiries form fieldset label {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 0.8em;
+}
+#inquiries textarea {
+    resize: none;
+}
+#inquiries button {
+    margin-top: 25px;
+    width: 100px;
+    align-self: center;
+}
