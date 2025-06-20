@@ -10,6 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script>
+        $(document).ready(function() {
+            $(".sec img").hover(function() {
+                var galleryHref = $(this).attr('src');
+                var galleryAlt = $(this).attr('title');
+
+                $('figure img').attr({src: galleryHref, alt: galleryAlt});
+
+                $('figcaption').html(galleryAlt);
+            });
+        });
+    </script>
 </head>
 <body>
     <nav class="main-nav">
@@ -30,5 +42,31 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    
+    <div class="gallery-wrapper">
+        <header class="gallery-header">
+            <h1>Moments From Victoria 2024</h1>
+        </header>
+
+        <nav class="gallery-nav">
+            <p>Victoria</p>
+            <div class="sec">
+                <img src="images/vic1.jpg" title="Walking on Streets of Downtown, Victoria" alt="Walking on Streets of Downtown, Victoria">
+                <img src="images/vic2.jpg" title="Home Cooked Meal, Victoria" alt="Home Cooked Meal, Victoria">
+                <img src="images/vic3.jpg" title="Ferry to Victoria" alt="Ferry to Victoria">
+                <img src="images/vic4.jpg" title="Fairmont Empress Hotel, Victoria" alt="Fairmont Empress Hotel, Victoria">
+                <img src="images/vic5.jpg" title="Vintage Record Store in Chinatown, Victoria" alt="Vintage Record Store in Chinatown, Victoria">
+                <img src="images/vic6.jpg" title="Elderly Couple on a Stroll in Downtown, Victoria" alt="Elderly Couple on a Stroll in Downtown, Victoria">
+                <img src="images/vic7.jpg" title="Parliament Building, Victoria" alt="Parliament Building, Victoria">
+                <img src="images/vic8.jpg" title="Unpacking Bags From Car, Victoria" alt="Unpacking Bags From Car, Victoria">
+            </div>
+        </nav>
+
+        <figure class="gallery-poster">
+            <img src="images/vic1.jpg">
+
+            <figcaption>Walking on Streets of Downtown, Victoria</figcaption>
+        </figure>
+    </div>
 </body>
 </html>
