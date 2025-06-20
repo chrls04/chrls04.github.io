@@ -10,6 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".sec img").hover(function() {
+                var galleryHref = $(this).attr('src');
+                var galleryAlt = $(this).attr('title');
+
+                $('figure img').attr({src: galleryHref, alt: galleryAlt});
+
+                $('figcaption').html(galleryAlt);
+            });
+        });
+    </script>
 </head>
 <body>
     <nav class="main-nav">
@@ -30,5 +42,37 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    
+    <div class="gallery-wrapper">
+        <header class="gallery-header">
+            <h1>Moments From China 2024</h1>
+        </header>
+
+        <nav class="gallery-nav">
+            <p>Yunnan</p>
+            <div class="sec">
+                <img src="images\yunnan1.JPG" title="Shilin Stone Forestt, Kunming" alt="Shilin Stone Forest, Kunming">
+                <img src="images\yunnan2.JPG" title="Yiliang County, Kunming" alt="Yiliang County, Kunming">
+                <img src="images\yunnan3.JPG" title="A Scenic River in Kunming" alt="A Scenic River in Kunming">
+                <img src="images\yunnan4.JPG" title="Bridge and River View in Kunming" alt="Bridge and River View in Kunming">
+                <img src="images\yunnan5.JPG" title="Man and His Baby Standing in Front of Shore, Kunming" alt="Man and His Baby Standing in Front of Shore, Kunming">
+            </div>
+
+            <p>Chongqing</p>
+            <div class="sec">
+                <img src="images\chongqing1.JPG" title="Restaurant at &quot;18 Stairs&quot;, Chongqing" altt="Restaurant at &quot;18 stairs&quot;, Chongqing">
+                <img src="images\chongqing2.JPG" title="Grocery Market, Chongqing" alt="Grocery Market, Chongqing">
+                <img src="images\chongqing3.JPG" title="Dog on Staircase, Chongqing" alt="Dog on Staircase, Chongqing">
+                <img src="images\chongqing4.JPG" title="Hongyadong, Chongqing" alt="Hongyadong, Chongqing">
+                <img src="images\chongqing5.JPG" title="Birds Eye View of &quot;18 Stairs&quot;, Chongqing" alt="Birds Eye View of &quot;18 Stairs&quot;, Chongqing">
+            </div>
+        </nav>
+
+        <figure class="gallery-poster">
+            <img src="images\yunnan1.JPG">
+
+            <figcaption>Shilin Stone Forest, Kunming</figcaption>
+        </figure>
+    </div>
 </body>
 </html>
