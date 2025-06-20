@@ -1,0 +1,9 @@
+body {
+    background: linear-gradient(190deg, #273e44, #0c0018);
+    color: #ffffff;
+    margin: 0;
+
+    padding-top: 6em;
+    min-height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+}
