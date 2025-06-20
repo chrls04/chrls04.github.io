@@ -7,3 +7,56 @@ body {
     min-height: 100vh;
     font-family: 'Roboto Mono', monospace;
 }
+/* ------------------------homepage---------------------------- */
+#floater {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    justify-content: center;
+    background-color: #000203ef;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: rgb(22, 22, 22) 5px solid;
+
+    display: flex;
+    flex-direction: row;
+    
+    /*for smoother transition between rotation change*/
+    transition: transform 0.3s ease;
+}
+#floater header {
+    margin-top: 24px;
+    width: 300px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 50px;
+    line-height: 2.2em;
+
+    color: rgb(240, 231, 231);
+}
+#floater header p {
+    line-height: 1em;
+    width: 350px;
+    padding-top: 30px;
+    font-weight: 300;
+
+    color: rgb(240, 231, 231);
+}
+#floater header h1 {
+    font-weight: 400;
+}
+#floater header h1 span{
+    display: inline;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+#floater img {
+    height: 400px;
+    width: auto;
+    margin-right: 30px;
+    align-items: center;
+}
+#floater:hover {
+    transform: rotate(3deg); 
+}
