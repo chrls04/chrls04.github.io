@@ -210,3 +210,33 @@ body {
 .gallery-poster img:hover {
     box-shadow: 0 0 20px rgba(33, 73, 112, 0.8);
 }
+/*------------------------contact-----------------------*/
+#socials ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#socials ul li a {
+    text-decoration: none;
+    color: #a2c2e7;
+    font-size: small;
+    padding-right: 70px;
+}
+#contact-wrapper {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #020a11ef; */
+    background-color: #000203ef;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    border: rgb(46, 45, 45) 3px solid;
+}
+#contact-wrapper h1 {
+    text-align: center;
+    color: white
+}
